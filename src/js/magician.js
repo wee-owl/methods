@@ -1,10 +1,9 @@
 import Character from './app';
 
 export default class Magician extends Character {
-  constructor(type, attack, protection) {
-    super(type, attack, protection);
-    this.type = 'Magician';
+  constructor(name, type = 'Magician') {
+    super(name, type);
     this.attack = 10;
-    this.protection = 40;
+    this.defence = 40;
   }
 }
